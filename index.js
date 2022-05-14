@@ -1,14 +1,13 @@
 const express = require('express')
 const cors = require('cors')
 const app = express()
+const path = require('path')
 
 const PORT = process.env.PORT || 5000
 
 app.use(cors())
 
-app.get('/', (req, res) => {
-    res.send('Hello World!')
-})
+app.use(express.static(path.join(__dirname, 'client/build')))
 
 app.get('/name', (req, res) => {
     res.json({
