@@ -9,7 +9,7 @@ function App() {
   }, [])
 
   const getName = async() => {
-    const response = await axios.get('http://localhost:5000/name')
+    const response = await axios.get('https://3.110.154.75/name')
     setName(response.data.name)
   }
 

@@ -11,7 +11,7 @@ app.use(express.static(path.join(__dirname, 'client/dist')))
 
 app.get('/name', (req, res) => {
     res.json({
-        name: 'Thor Odinson'
+        name: 'Thor Odinson the God of Thunder'
     })
 })
 
